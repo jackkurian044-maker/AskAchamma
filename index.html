@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102820">
+  <meta name="description" content="Ask Achamma subject-matter expert review workspace for validating tool names and definitions.">
+  <title>Ask Achamma | SME Review Portal</title>
+  <style>
+    :root{--ink:#17231e;--muted:#66746c;--paper:#f5f7f2;--card:#fff;--green:#245c45;--lime:#d8ef9b;--line:#dfe6dd;--soft:#edf3eb;--amber:#fff2d8}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    header{background:var(--ink);color:white;padding:26px max(22px,calc((100% - 1180px)/2));display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .brand{display:flex;gap:13px;align-items:center}.mark{height:42px;width:42px;border-radius:14px;background:var(--lime);color:var(--ink);display:grid;place-items:center;font-size:23px;font-weight:800}.brand small{display:block;color:#c2cdc5;letter-spacing:.12em;text-transform:uppercase;font-size:10px}.brand strong{font-size:20px}
+    .pill{border:1px solid #53665a;padding:7px 12px;border-radius:999px;font-size:12px;color:#e2e9e1}
+    main{max-width:1180px;margin:auto;padding:34px 22px 72px}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.14em;color:var(--green);text-transform:uppercase}
+    h1{font-size:clamp(30px,4.3vw,48px);letter-spacing:-.045em;line-height:1.05;margin:9px 0 13px;max-width:720px}.lead{color:var(--muted);font-size:16px;max-width:760px;margin:0}
+    .hero{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:28px}.hero-note{background:var(--lime);border-radius:18px;padding:17px 19px;max-width:285px;font-size:13px}.hero-note strong{display:block;font-size:15px;margin-bottom:4px}
+    .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:27px 0}.stat{background:var(--card);border:1px solid var(--line);padding:17px;border-radius:16px}.stat span{display:block;font-size:12px;color:var(--muted)}.stat strong{display:block;font-size:26px;margin-top:3px;letter-spacing:-.04em}
+    .layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(280px,.8fr);gap:18px;align-items:start}.panel{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}.panel-head{padding:20px 22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;align-items:center}.panel-head h2{font-size:18px;margin:0;letter-spacing:-.02em}.panel-body{padding:22px}
+    label{display:block;font-size:12px;font-weight:700;margin-bottom:6px;color:#34443b}input,select,textarea{width:100%;border:1px solid #d7e0d5;border-radius:10px;padding:11px 12px;background:#fff;color:var(--ink);font:inherit;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px #245c451c}textarea{min-height:86px;resize:vertical}.field{margin-bottom:15px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:13px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+    button{border:0;border-radius:10px;padding:11px 16px;font-weight:750;font:inherit;cursor:pointer}.primary{background:var(--green);color:white}.secondary{background:var(--soft);color:var(--green)}button:hover{filter:brightness(.97)}
+    .helper{font-size:12px;color:var(--muted);margin:12px 0 0}.notice{background:var(--amber);padding:13px 15px;border-radius:12px;font-size:12px;color:#664b1b;margin-bottom:18px}
+    .review-list{display:grid;gap:11px}.review-item{border:1px solid var(--line);border-radius:14px;padding:15px}.review-item-top{display:flex;justify-content:space-between;gap:8px;align-items:center}.review-item h3{margin:10px 0 3px;font-size:15px}.review-item p{margin:0;color:var(--muted);font-size:13px}.status{border-radius:999px;background:var(--soft);color:var(--green);padding:4px 8px;font-size:10px;font-weight:800;white-space:nowrap}.mini{font-size:11px;color:var(--muted)}
+    .steps{display:grid;gap:15px}.step{display:grid;grid-template-columns:32px 1fr;gap:12px}.num{width:30px;height:30px;border-radius:10px;background:var(--soft);display:grid;place-items:center;color:var(--green);font-weight:800}.step strong{display:block;font-size:14px}.step p{margin:3px 0 0;color:var(--muted);font-size:12px}
+    footer{border-top:1px solid var(--line);margin-top:25px;padding-top:18px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+    @media(max-width:850px){.layout{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-note{max-width:none;width:100%}}@media(max-width:530px){main{padding:26px 15px 50px}.fields{grid-template-columns:1fr}.panel-head,.panel-body{padding:17px}.stats{gap:8px}.stat{padding:13px}.stat strong{font-size:22px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="brand"><div class="mark">A</div><div><small>Ask Achamma</small><strong>SME Review Portal</strong></div></div>
+  <div class="pill">Product terminology · Review workspace</div>
+</header>
+<main>
+  <section class="hero">
+    <div><div class="eyebrow">Expert validation workspace</div><h1>Make every tool name mean exactly what it should.</h1><p class="lead">A structured place for subject-matter experts to review core names, definitions and examples—before approved corrections reach the Ask Achamma tool.</p></div>
+    <div class="hero-note"><strong>Review first. Apply second.</strong>Proposals are recommendations, not live product changes. The product owner should approve them before rollout.</div>
+  </section>
+  <section class="stats" aria-label="Review summary">
+    <div class="stat"><span>Review items</span><strong id="countItems">3</strong></div><div class="stat"><span>Pending SME review</span><strong id="countPending">3</strong></div><div class="stat"><span>Accepted</span><strong>0</strong></div><div class="stat"><span>Applied to tool</span><strong>0</strong></div>
+  </section>
+  <div class="layout">
+    <section class="panel">
+      <div class="panel-head"><h2>Submit a terminology review</h2><span class="status">DRAFT FORM</span></div>
+      <div class="panel-body">
+        <div class="notice"><strong>Prototype notice:</strong> This form currently previews the submission in your browser only. It does not save to a shared database or notify the product team.</div>
+        <form id="reviewForm">
+          <div class="fields">
+            <div class="field"><label for="area">Tool / feature area *</label><select id="area" required><option value="">Choose an area</option><option>Conversation practice</option><option>Listening / pronunciation</option><option>Learning path</option><option>Business etiquette</option><option>Assessment / scoring</option><option>Other</option></select></div>
+            <div class="field"><label for="currentName">Current core name *</label><input id="currentName" required placeholder="Name used in the tool"></div>
+          </div>
+          <div class="field"><label for="currentMeaning">Current meaning or purpose *</label><textarea id="currentMeaning" required placeholder="What should the tool or feature do?"></textarea></div>
+          <div class="field"><label for="proposedName">SME-proposed name</label><input id="proposedName" placeholder="Recommended corrected name"></div>
+          <div class="field"><label for="proposedMeaning">Proposed definition / description</label><textarea id="proposedMeaning" placeholder="A clear, accurate definition for users and the product team"></textarea></div>
+          <div class="field"><label for="reason">Reason and evidence for the change *</label><textarea id="reason" required placeholder="Domain context, terminology standard, ambiguity, or user impact"></textarea></div>
+          <div class="fields">
+            <div class="field"><label for="example">Example user phrase</label><input id="example" placeholder="An example of how a user might say it"></div>
+            <div class="field"><label for="expertise">SME expertise</label><input id="expertise" placeholder="Domain / role"></div>
+          </div>
+          <div class="fields">
+            <div class="field"><label for="confidence">Confidence</label><select id="confidence"><option>High</option><option selected>Medium</option><option>Low</option></select></div>
+            <div class="field"><label for="reviewer">Reviewer name (optional)</label><input id="reviewer" placeholder="Name or initials"></div>
+          </div>
+          <div class="actions"><button class="primary" type="submit">Preview review</button><button class="secondary" type="reset">Clear form</button></div>
+          <p class="helper">Required fields are marked *. Avoid entering confidential or personal information.</p>
+        </form>
+        <div id="preview" hidden style="margin-top:20px;border-top:1px solid var(--line);padding-top:18px"><h3 style="margin:0 0 9px">Review preview</h3><div id="previewContent" style="white-space:pre-wrap;font-size:13px;color:var(--muted)"></div><div class="actions"><button id="copyReview" class="secondary" type="button">Copy review text</button></div></div>
+      </div>
+    </section>
+    <aside>
+      <section class="panel" style="margin-bottom:18px"><div class="panel-head"><h2>Review queue</h2><span class="mini">Illustrative starter items</span></div><div class="panel-body"><div class="review-list" id="reviewList">
+        <article class="review-item"><div class="review-item-top"><span class="mini">AA-001 · Conversation practice</span><span class="status">Pending</span></div><h3>Practice session</h3><p>Check whether the name tells users what skill they will practise and how feedback will be given.</p></article>
+        <article class="review-item"><div class="review-item-top"><span class="mini">AA-002 · Listening</span><span class="status">Pending</span></div><h3>Listen &amp; Practise</h3><p>Validate whether listening, repetition and pronunciation feedback are represented accurately.</p></article>
+        <article class="review-item"><div class="review-item-top"><span class="mini">AA-003 · Feedback</span><span class="status">Pending</span></div><h3>Natural phrasing</h3><p>Confirm the difference between a corrected sentence, a natural alternative and an explanation.</p></article>
+      </div></div></section>
+      <section class="panel"><div class="panel-head"><h2>Approval path</h2></div><div class="panel-body steps">
+        <div class="step"><div class="num">1</div><div><strong>SME review</strong><p>Recommend corrected names and precise definitions.</p></div></div>
+        <div class="step"><div class="num">2</div><div><strong>Owner decision</strong><p>Accept, reject, or request clarification with a recorded rationale.</p></div></div>
+        <div class="step"><div class="num">3</div><div><strong>Apply the change</strong><p>Update the product only after approval and test relevant user flows.</p></div></div>
+        <div class="step"><div class="num">4</div><div><strong>Verify and close</strong><p>Record the version, test evidence and completion date.</p></div></div>
+      </div></section>
+    </aside>
+  </div>
+  <footer><span>Ask Achamma · SME Review Portal · Starter skeleton</span><span>Shared storage and reviewer authentication still need configuration.</span></footer>
+</main>
+<script>
+const form=document.getElementById('reviewForm');const preview=document.getElementById('preview');const previewContent=document.getElementById('previewContent');
+form.addEventListener('submit',e=>{e.preventDefault();const names=[['Feature area','area'],['Current name','currentName'],['Current purpose','currentMeaning'],['Proposed name','proposedName'],['Proposed definition','proposedMeaning'],['Reason / evidence','reason'],['Example phrase','example'],['SME expertise','expertise'],['Confidence','confidence'],['Reviewer','reviewer']];previewContent.textContent=names.map(([label,id])=>label+': '+(document.getElementById(id).value.trim()||'—')).join('\n');preview.hidden=false;preview.scrollIntoView({behavior:'smooth',block:'nearest'});});
+document.getElementById('copyReview').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(previewContent.textContent);document.getElementById('copyReview').textContent='Copied';}catch(e){document.getElementById('copyReview').textContent='Select and copy text above';}});
+</script>
+</body>
+</html>
